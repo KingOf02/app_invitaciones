@@ -9,5 +9,13 @@ export const MARCA = {
 export const LISTA_ESPERA_ENDPOINT = import.meta.env.VITE_WAITLIST_ENDPOINT || ''
 export const WHATSAPP_CONTACTO = import.meta.env.VITE_WHATSAPP_NUMBER || ''
 
+// Datos del responsable que aparecen en el aviso de privacidad.
+export const RESPONSABLE = {
+  nombre: 'Marco Guerrero',
+  ciudad: 'Monterrey, Nuevo León, México',
+  correo: 'ingguerrero97@gmail.com',
+}
+export const FECHA_AVISO = '2 de noviembre de 2026'
+
 export const DESCUENTO_LANZAMIENTO = 0.4
 export const CUPOS_LANZAMIENTO = 10

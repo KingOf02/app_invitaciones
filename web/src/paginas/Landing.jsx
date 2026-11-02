@@ -49,9 +49,9 @@ export default function Landing() {
     <div className="overflow-x-hidden">
       <header className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5">
         <Logo />
-        <nav className="flex items-center gap-2 text-sm font-medium">
+        <nav className="flex items-center gap-2 whitespace-nowrap text-sm font-medium">
           <a href="#precios" className="hidden rounded-full px-3 py-2 hover:bg-rosa sm:inline">Precios</a>
-          <Link to="/demo" className="rounded-full px-3 py-2 text-vino hover:bg-rosa">Ver demo</Link>
+          <Link to="/demo" className="hidden rounded-full px-3 py-2 text-vino hover:bg-rosa sm:inline">Ver demo</Link>
           <Boton as="a" href="#lista" className="!px-4 !py-2">Lista de espera</Boton>
         </nav>
       </header>
@@ -194,7 +194,10 @@ export default function Landing() {
       <footer className="bg-tinta text-crema/70">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-10 text-sm sm:flex-row sm:items-center sm:justify-between">
           <Logo claro />
-          <p>{MARCA.lema} · Hecho en Monterrey</p>
+          <p>
+            {MARCA.lema} · Hecho en Monterrey ·{' '}
+            <Link to="/privacidad" className="underline underline-offset-2 hover:text-crema">Aviso de privacidad</Link>
+          </p>
         </div>
       </footer>
     </div>

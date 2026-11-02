@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { LISTA_ESPERA_ENDPOINT, WHATSAPP_CONTACTO } from '../config'
 import { Boton } from './comunes'
 
@@ -74,7 +75,8 @@ export default function ListaEspera() {
           <p className="mt-3 text-sm text-vino">No pudimos guardar tus datos. Intenta de nuevo en un momento.</p>
         )}
         <p className="mt-3 text-xs text-suave">
-          Solo usamos tu nombre y teléfono para avisarte del lanzamiento. No compartimos tus datos.
+          Solo usamos tu nombre y teléfono para avisarte del lanzamiento. No compartimos tus datos. Consulta el{' '}
+          <Link to="/privacidad" className="underline underline-offset-2">aviso de privacidad</Link>.
         </p>
       </div>
     </form>
